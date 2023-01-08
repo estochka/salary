@@ -1,0 +1,11 @@
+pygsheets
+numpy
+pandas
+catboost
+sklearn
+spacy
+scikit-learn
+transformers
+scipy
+python-dotenv
+torch
