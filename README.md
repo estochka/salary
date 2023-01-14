@@ -11,8 +11,6 @@ https://docs.google.com/spreadsheets/d/1Veltt6IHAp4w5Mj0Kle4MTH8fdvBiJ-ang_thmwW
 - estimators.py - несколько классов на основе BaseEstimator
 
 
-Остальное вспомогательные модули, в том числе содержат собственные функции под PipeLine (estimators.py)
-
 _________________________________________________________________________________________________________
 
 Папка notebooks
