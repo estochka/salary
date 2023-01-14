@@ -1,6 +1,6 @@
 ## Предсказания зарплаты.
 
-Табличка для предсказаний (пока отключено, настройка сервера)
+Табличка для предсказаний 
 https://docs.google.com/spreadsheets/d/1Veltt6IHAp4w5Mj0Kle4MTH8fdvBiJ-ang_thmwWWXs/
 
 Датасет, который модель "не знает" - https://disk.yandex.ru/d/cKqqDbqp0DUOcw.
