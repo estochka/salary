@@ -1,5 +1,9 @@
 ## Предсказания зарплаты.
 
+Цель: построить модель для удаленного сервера, которая может предсказывать зарплату по резюме.
+
+`pandas` `numpy` `spacy` `pickle` `torch` `sklearn` `catboost` `transformers` `pandas_profiling` 
+_________________________
 Табличка для предсказаний 
 https://docs.google.com/spreadsheets/d/1Veltt6IHAp4w5Mj0Kle4MTH8fdvBiJ-ang_thmwWWXs/
 
