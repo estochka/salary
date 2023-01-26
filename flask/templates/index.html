@@ -1,55 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-    <title>Predictions</title>
-</head>
-<body>
- <div class="login">
-<div class="container">
- <form action="{{ url_for('predict')}}" method="post">
-    <div class="py-5 text-center">
-      <h2>Salary prediction</h2>
-    </div>
-
-  <div class="row border border-primary pb-3">
-
-    <div class="col-sm-6 col-xs-12 mt-3">
-        <h4>FullDescription</h4>
-<!--                    CHAMPNEYS HEALTH RESORTS JOB DESCRIPTION JOB TITLE: Waiter/Waitress HOURS: Fulltime and Parttime vacancies RESPONSIBLE TO: Restaurant Manager and Restaurant Supervisor RESPONSIBLE FOR: To provide and maintain efficient and courteous service of food and beverages, to Champneys standards PLACE OF WORK: Champneys Health Resort, Tring MAIN DUTIES AND RESPONSIBILITIES To participate in the restaurant and room service in accordance with the requirements and practices of the food and beverage department. To prepare all miseenplace required for the tables and stations before each service. To ensure the service and pantry areas are clean and tidy before, during and after the service. To contribute to a good working environment by being punctual, polite and cooperative with your colleagues. Responsible for maintaining a high standard of work performance and conduct at all times. To gain working knowledge of calorific values and basic nutrition in order to advise guests on diet. To have a wor...-->
-
-        <textarea class="form-control" style="resize:none" rows="15" placeholder="full description" name="description" required="required" ></textarea>
-
-    </div>
-    <div class="col-sm-6 col-xs-12 mt-3">
-        <div class="row ml-3">
-            <div class="col-sm-12 mb-3">
-              <h4>LocationNormalized</h4>
-                <input class="form-control" type="text" placeholder="location" name="location" aria-label=''>
-            </div>
-            <div class="col-sm-12">
-              <h4>Category</h4>
-                <input class="form-control" type="text" placeholder="category" name="category" aria-label=''>
-            </div>
-            <div class="col-sm-12 mt-3">
-              <h2 class="text-primary">The Last Predicted</h2>
-                <p class="mt-1"><b>CatBoost:</b>  {{ cat_predict }} </p>
-                <p><b>Regression:</b>  {{ regress_predict }} </p>
-            </div>
-
-        </div>
-    </div>
-  </div>
-  <div class="text-center mt-4">
-    <button type="submit" class="btn btn-outline-primary btn-lg">Predict</button>
-
-  </div>
-    </form>
-</div>
- </div>
-</body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <title>Predictions</title>
+   </head>
+   <body>
+      <div class="login">
+         <div class="container">
+            <form action="{{ url_for('predict')}}" method="post">
+               <div class="py-5 text-center">
+                  <h2>Salary prediction</h2>
+               </div>
+               <div class="row border border-primary pb-3">
+                  <div class="col-sm-6 col-xs-12 mt-3">
+                     <h4>FullDescription</h4>
+                     <textarea class="form-control" style="resize:none" rows="15" placeholder="full description" name="description" required="required" ></textarea>
+                  </div>
+                  <div class="col-sm-6 col-xs-12 mt-3">
+                     <div class="row ml-3">
+                        <div class="col-sm-12 mb-3">
+                           <h4>LocationNormalized</h4>
+                           <input class="form-control" type="text" placeholder="location" name="location" aria-label=''>
+                        </div>
+                        <div class="col-sm-12">
+                           <h4>Category</h4>
+                           <input class="form-control" type="text" placeholder="category" name="category" aria-label=''>
+                        </div>
+                        <div class="col-sm-12 mt-3">
+                           <h2 class="text-primary">The Last Predicted</h2>
+                           <p class="mt-1"><b>CatBoost:</b>  {{ cat_predict }} </p>
+                           <p><b>Regression:</b>  {{ regress_predict }} </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="text-center mt-4">
+                  <button type="submit" class="btn btn-outline-primary btn-lg">Predict</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </body>
 </html>
