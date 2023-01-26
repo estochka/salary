@@ -1,8 +1,0 @@
-version: "3"
-
-services:
-  predict:
-    environment:
-      - TZ=Europe/Moscow
-    build: .
-    restart: always
